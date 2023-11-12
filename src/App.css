@@ -9,7 +9,6 @@
 .containerTextArea {
   display: flex;
   flex-direction: column;
-
   width: 100vw;
   height: 100vh;
   background-image: url('./assets/bg.png');
@@ -20,6 +19,7 @@
 
 .textArea {
   background-color: white;
+  margin-bottom: 15vh;
   min-width: 90vw;
   align-self: center;
 
@@ -77,6 +77,6 @@ button {
   padding: 10px;
 }
 
-.radioInput > img{
+.radioInput>img {
   width: 80px;
 }
