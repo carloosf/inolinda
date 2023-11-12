@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import Hero from "./components/hero/Hero";
-import ScreenNovel from "./components/screenNovel/ScreenNovel";
 import "./App.css";
 
 export default function App() {
-  const [data, setData] = useState([{}]);
+  const [data, setData] = useState({});
   const [showHero, setShowHero] = useState(true);
   const [step, setStep] = useState(0);
 
@@ -18,6 +17,11 @@ export default function App() {
 
   const handleClick = () => {
     setStep(step + 1);
+  };
+  console.log(step);
+
+  const handleInput = (value, name) => {
+    setData({ name: value });
   };
 
   return (
@@ -39,7 +43,18 @@ export default function App() {
       )}
       {!showHero ||
         (step === 1 && (
-          <ScreenNovel question="Qual é o seu nome?" responses={[]} />
+          <div className="containerTextArea">
+            <div className="img"></div>
+            <div className="person"></div>
+            <div className="textArea">
+              <p>
+                Saudações! Sou Damm, o seu guia nesta incrível jornada. Antes de
+                começarmos nossa aventura, gostaria de saber mais sobre você.
+              </p>
+              <input type="text" placeholder="Qual é o seu nome?"/>
+              <button onClick={handleClick }>Proximo</button>
+            </div>
+          </div>
         ))}
     </div>
   );
