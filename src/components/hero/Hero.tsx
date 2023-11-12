@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="containerHero">
       <div className="imgHero"></div>{" "}
       <div className="logos">
-        <div className="imgOcca"></div> <span>|</span> <div className="imgOcca"></div>{" "}
+        <div className="imgOcca"></div> <span>|</span> <div className="imgInolinda"></div>{" "}
       </div>
     </div>
   );
