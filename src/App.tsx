@@ -6,13 +6,17 @@ import sun from "./assets/sun.png";
 import moon from "./assets/moon.png";
 
 export default function App() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [data, setData] = useState({});
   const [showHero, setShowHero] = useState(true);
   const [step, setStep] = useState(0);
   const [name, setName] = useState("");
-  const [moonOrSun, setMoonOrSun] = useState(0);
-  const [forest, setForest] = useState(0);
-
+  const [moonOrSun, setMoonOrSun] = useState(3);
+  const [forest, setForest] = useState(3);
+  const [cuidadosamente, setCuidadosamente] = useState(3);
+  console.log("====================================");
+  console.log(data);
+  console.log("====================================");
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowHero(false);
@@ -152,11 +156,46 @@ export default function App() {
               Nas suas decisões, você considera cuidadosamente ou decide
               intuitivamente?
             </p>
-            <div>
-              <input type="radio" name="" id="" />
+            <div className="radioContainer">
+              <div className="radioInput">
+                <input
+                  type="radio"
+                  onChange={() => setCuidadosamente(0)}
+                  checked={cuidadosamente === 0}
+                  value={cuidadosamente}
+                />
+                <span>Considerar cuidadosamente</span>
+              </div>
+              <div className="radioInput">
+                <input
+                  type="radio"
+                  onClick={() => setCuidadosamente(1)}
+                  value={cuidadosamente}
+                  checked={cuidadosamente === 1}
+                />
+                <span>decide intuitivamente</span>
+              </div>
             </div>
             <button onClick={handleClick}>Proximo</button>
           </div>
+        </div>
+      )}
+      {!showHero && step === 5 && (
+        <div className="containerTextArea">
+          <div className="img"></div>
+          <div className="person">
+            <img src={person} alt="" />
+          </div>
+          <div className="radioContainer">
+            <input type="image" src="" alt="" />
+            <div className="textArea"></div>
+          </div>
+          <button onClick={handleClick}>Proximo</button>
+        </div>
+      )}
+      {!showHero && step === 6 && (
+        <div className="containerTextArea">
+          <button onClick={handleSubmit}></button>
         </div>
       )}
     </div>
