@@ -8,7 +8,7 @@
   padding-inline: 10px;
 }
 
-.img, .imgOcca {
+.imgHero, .imgOcca {
   width: 70vw;
   height: 70vh;
   min-width: 100px;
@@ -19,7 +19,7 @@
   transition: 1s;
 }
 
-.img{
+.imgHero{
   background-image: url('../../assets/logo.png');
 }
 

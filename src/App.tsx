@@ -26,6 +26,7 @@ export default function App() {
       {!showHero && step === 0 && (
         <div className="containerTextArea">
           <div className="img"></div>
+          <div className="person"></div>
           <div className="textArea">
             <p>
               Bem vindo a RECCITY, uma vanguarda entre as Smartcities do século
