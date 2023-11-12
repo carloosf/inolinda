@@ -1,3 +1,82 @@
-.hidden{
+.hidden {
   display: none;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.containerTextArea {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.textArea {
+  background-color: white;
+  min-width: 90vw;
+  align-self: center;
+
+  margin-inline: 10px;
+  border: 2px solid rgb(120, 104, 106);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.person {
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.person>img {
+  width: 300px;
+}
+
+
+button {
+  padding: 5px 10px;
+  color: black;
+}
+
+.radioInput {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+
+}
+
+.radioContainer {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nameArea {
+  gap: 20px;
+}
+
+.nameArea>input {
+  padding: 10px;
+  margin-inline-end: 20px;
+}
+
+.nameArea>button {
+  padding: 10px;
+}
+
+.radioInput > img{
+  width: 80px;
 }

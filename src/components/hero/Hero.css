@@ -6,11 +6,15 @@
   align-items: center;
   justify-content: center;
   padding-inline: 10px;
+
+  background-color: #010719;
 }
 
-.img, .imgOcca {
+.imgHero,
+.imgOcca,
+.imgInolinda{
   width: 70vw;
-  height: 70vh;
+  height: 76vh;
   min-width: 100px;
   min-height: 100px;
   background-size: contain;
@@ -19,7 +23,7 @@
   transition: 1s;
 }
 
-.img{
+.imgHero {
   background-image: url('../../assets/logo.png');
 }
 
@@ -29,6 +33,18 @@
   background-image: url('../../assets/logo-occa.png');
 }
 
-.logos{
+.imgInolinda {
+  width: 25vw;
+  height: 25vh;
+  background-image: url('../../assets/inolinda-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logos {
   display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 20px;
+  color: white;
 }
