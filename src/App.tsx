@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Hero from "./components/hero/Hero";
+import Hero from "./components/hero/Hero.tsx";
 import "./App.css";
 import person from "./assets/person.png";
 import sun from "./assets/sun.png";
