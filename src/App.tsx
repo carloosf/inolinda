@@ -14,6 +14,9 @@ export default function App() {
   const [moonOrSun, setMoonOrSun] = useState(3);
   const [forest, setForest] = useState(3);
   const [cuidadosamente, setCuidadosamente] = useState(3);
+  console.log('====================================');
+  console.log(data);
+  console.log('====================================');
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowHero(false);
